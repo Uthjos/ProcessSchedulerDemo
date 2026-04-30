@@ -5,9 +5,14 @@
 #ifndef PROCESSSCHEDULERDEMO_PROCESS_H
 #define PROCESSSCHEDULERDEMO_PROCESS_H
 
+//define for state
+#define FREE 0
+#define READY 1
+#define RUNNING 2
+
 struct process {
 	int pID;
-	char name[];
+	char name[32];
 	int pState;
 	float execTime;
 };
